@@ -42,7 +42,7 @@ def get_matching_s3_keys(bucket, region, prefix="", suffix=""):
 def main():
     # Modify the defaults if you use the same region and bucket frequently
     parser = argparse.ArgumentParser(description='Process some command line arguments.')
-    parser.add_argument('--region', type=str, required=False, default='YOUR_REGION', help='S3 region')
+    parser.add_argument('--region', type=str, required=False, default='YOUR-REGION', help='S3 region')
     parser.add_argument('--bucket', type=str, required=False, default='YOUR-BUCKET', help='S3 bucket')
     parser.add_argument('--folder', type=str, required=False, default='', help='Optional folder path within the bucket to enumerate')
 

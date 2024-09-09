@@ -31,7 +31,7 @@ def get_matching_s3_objects(bucket, prefix="", suffix=""):
 
 def get_matching_s3_keys(bucket, region, prefix="", suffix=""):
 
-    url_root = f'https://{bucket}.{region}.amazonaws.com/'
+    url_root = f'https://{bucket}.s3.{region}.amazonaws.com/'
 
     for obj in get_matching_s3_objects(bucket, prefix, suffix):
         key = obj["Key"]
